@@ -5,8 +5,7 @@ public:
     string tree2str(TreeNode* node) {
         if(!node) return "";
         
-        string ans;
-        ans += to_string(node->val);
+        string ans = to_string(node->val);
         string left = tree2str(node->left);
         string right = tree2str(node->right);
         
